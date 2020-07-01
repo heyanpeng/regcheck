@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>RegExp playground</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/standalone.css" />
+    <link rel="stylesheet" href="css/regex-test.css" />
+    <link rel="stylesheet" href="css/tippy.css" />
+
+</head>
+
+<body data-pattern="a(b)" data-test="aabb">
+
+    <a href="" class="tweet button" target="_blank" style="display: none;">Tweet!</a>
+
+    <aside>
+        <section class="help" id="cheatsheet">
+            <h1>Cheat sheet</h1>
+            <dfn title="Dot: Matches everything, except line breaks">.</dfn>
+            <dfn title="n times">{n}</dfn>
+            <dfn title="At least n times" class="long">{n,}</dfn>
+            <dfn title="At least m times but no more than n times" class="long">{m,n}</dfn>
+            <dfn title="Same as {0,1}">?</dfn>
+            <dfn title="Same as {0,}">*</dfn>
+            <dfn title="Same as {1,}">+</dfn>
+            <dfn title="Character class">[…]</dfn>
+            <dfn title="Same as [a-zA-Z0-9_]">\w</dfn>
+            <dfn title="Same as [0-9]">\d</dfn>
+            <dfn title="About the same as [\t\r\n ]">\s</dfn>
+            <dfn title="Negated character class" class="long">[^…]</dfn>
+            <dfn title="Grouping and capturing">(…)</dfn>
+            <dfn title="Non-capturing group" class="long">(?:…)</dfn>
+            <dfn title="Beginning of string">^</dfn>
+            <dfn title="End of string">$</dfn>
+            <dfn title="Word boundary">\b</dfn>
+            <dfn title="Non-word boundary">\B</dfn>
+            <dfn title="Positive lookahead" class="long">(?=…)</dfn>
+            <dfn title="Negative lookahead" class="long">(?!…)</dfn>
+            <dfn title="Nth backreference">\N</dfn>
+        </section>
+
+        <section class="help" id="keyboard-shortcuts">
+            <h1>Keyboard shortcuts</h1>
+
+            <dfn title="Next match"><kbd data-keycode="40">↓</kbd></dfn>
+
+            <dfn title="Next subpattern"><kbd data-ctrlkey>⌃</kbd><kbd data-keycode="40">↓</kbd></dfn>
+            <dfn title="Previous subpattern"><kbd data-ctrlkey>⌃</kbd><kbd data-keycode="38">↑</kbd></dfn>
+            <!--<dfn title="Global flag"><kbd>⌃</kbd><kbd>G</kbd></dfn>-->
+            <br />
+            <dfn title="Previous match"><kbd data-keycode="38">↑</kbd></dfn>
+            <dfn title="Case insensitive flag"><kbd data-ctrlkey>⌃</kbd><kbd data-keycode="73">I</kbd></dfn>
+            <dfn title="Multiline flag"><kbd data-ctrlkey>⌃</kbd><kbd data-keycode="77">M</kbd></dfn>
+        </section>
+    </aside>
+
+    <footer style="display: none;">
+        Made by <a href="http://lea.verou.me">Lea Verou</a> with care
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=lea%40verou%2eme&lc=GR&item_name=Lea%20Verou&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"
+            class="button" rel="nofollow" target="_blank">Donate</a>
+    </footer>
+
+    <script src="tippy.js"></script>
+    <script src="bliss.shy.js"></script>
+    <script>
+        var $ = Bliss, $$ = Bliss.$;
+    </script>
+    <script src="regex-test.js"></script>
+    <script src="standalone.js"></script>
+
+</body>
+
+</html>
